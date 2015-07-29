@@ -38,6 +38,8 @@
 |
 */
 
+$route['jobs'] = "Jobs/landing/main";
+
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 

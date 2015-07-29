@@ -1,0 +1,58 @@
+body
+{
+	background-color: #EFEDE1;
+}
+
+.navbar
+{
+	position: fixed;
+	width: 100%;
+}
+
+.jumbotron 
+{
+	background-image: url("/res/img/landing_bg.jpg");
+	background-size: cover;
+	color:white;
+	text-align: center;
+	padding-top: 12em;
+	padding-bottom: 12em;
+	margin-bottom: 12em;
+}
+
+
+.login-container
+{
+	margin-top:-20em;
+	width: 10em;
+	height: 10em;
+}
+
+.center-text
+{
+	text-align: center;
+}
+
+.job-posting
+{
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	padding-bottom: 2em;
+	border-bottom: solid 1px black;
+}
+
+
+.btn-apply
+{
+	margin-top: 3em;
+}
+
+.landing-footer
+{
+	background-color: white;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	margin-top: 5em;
+}
