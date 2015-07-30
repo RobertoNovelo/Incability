@@ -21,3 +21,25 @@ $(".btn-post-job").on("click",function()
 		$("#post-success").modal();
 	}
 });
+
+$("#submitmyname").on("click", function()
+{
+	$.post("/index.php/addmyname", 
+	{
+		name: $("#name").val()
+	}, 
+	function(response)
+	{
+		$("#post-success").modal("hide");
+
+		$("#nameslist").html("");
+
+		for(var i=0; i<response.names.length; i++)
+		{
+			$("#nameslist").append('<h4>'+response.names[i].name+'</h4>');
+		}
+
+		$("#myname-success").modal();
+
+	}, 'json');
+});

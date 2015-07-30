@@ -92,16 +92,16 @@
             <h4 class="modal-title" id="Success">Thank you!</h4>
           </div>
           <div class="modal-body center-text">
-          <h4>Your job title:</h4>
-          <h4 id="modal-post-title"></h4>
-          <h4>Your job description:</h4>
-          <h4 id="modal-post-desc"></h4>
-          <h4>Please add your name to the list of people who have completed this challenge:</h4>
-              <input class="form-control" placeholder="Name"/>
-              <button type="button" id="submit-name" class="btn btn-success btn-post-job">Add My Name</button>
+            <h4>Your job title:</h4>
+            <h4 id="modal-post-title"></h4>
+            <h4>Your job description:</h4>
+            <h4 id="modal-post-desc"></h4>
+            <h4>Please add your name to the list of people who have completed this challenge:</h4>
+              <input id="name" class="form-control" placeholder="Name"/>
+              <button type="button" id="submitmyname" class="btn btn-success">Add My Name</button>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Nevermind, Close This!</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">No Thanks!</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -118,6 +118,28 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Alright!</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myname-success" tabindex="-1" role="dialog" aria-labelledby="myName" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+            <h4 class="modal-title" id="myName">List of people who have completed this challenge (navigate with p, shift + p in JAWS)</h4>
+
+          </div>
+
+          <div id="nameslist" class="modal-body center-text">
+            
+          </div>
+
+          <div class="modal-footer">
+            <button id="submitmyname" type="button" class="btn btn-default" data-dismiss="modal">Cool!</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->

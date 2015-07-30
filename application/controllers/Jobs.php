@@ -28,8 +28,6 @@ class Jobs extends CI_Controller {
 
 		$response["jobsList"] = $this->job_data->get_jobs_list();
 
-		$response["loggedIn"] = $this->session->userdata('loggedIn');
-
 		echo json_encode($response);
 	}
 

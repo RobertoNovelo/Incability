@@ -22,6 +22,21 @@ class Employer extends CI_Controller {
 		$this->load->view('employer');
 	}
 
+	public function add_employer()
+	{
+		$this->load->model("employer_model");
+
+		$name = $this->input->post("name");
+
+		$this->employer_model->add_to_employers($name);
+
+		$response["names"] = $this->employer_model->get_names_list();
+
+		$response["responseStatus"] = true;
+
+		echo json_encode($response);
+	}
+
 }
 
 /* End of file welcome.php */
