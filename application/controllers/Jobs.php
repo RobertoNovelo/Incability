@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Landing extends CI_Controller {
+class Jobs extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,9 +19,20 @@ class Landing extends CI_Controller {
 	 */
 	public function main()
 	{
-		$this->load->view('header/landing');
-		$this->load->view('footer/landing');
+		$this->load->view('jobs');
 	}
+
+	public function get_jobs_list()
+	{
+		$this->load->model("Job/job_data");
+
+		$response["jobsList"] = $this->job_data->get_jobs_list();
+
+		$response["loggedIn"] = $this->session->userdata('loggedIn');
+
+		echo json_encode($response);
+	}
+
 }
 
 /* End of file welcome.php */

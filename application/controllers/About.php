@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Data extends CI_Controller {
+class About extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -17,18 +17,11 @@ class Data extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function list()
+	public function main()
 	{
-		$this->load->model("Job/job_data");
-
-		echo "!!!!";
-
-		$response["jobsList"] = $this->job_data->get_jobs_list();
-
-		$response["loggedIn"] = $this->session->userdata('loggedIn');
-
-		echo json_encode($response);
+		$this->load->view('about');
 	}
+
 }
 
 /* End of file welcome.php */

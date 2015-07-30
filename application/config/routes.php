@@ -38,10 +38,13 @@
 |
 */
 
-$route['jobs'] = "Jobs/landing/main";
-$route['jobs/list'] = "Jobs/data/list";
+$route['jobs'] 			= "jobs/main";
+$route['employer'] 		= "employer/main";
+$route['about'] 		= "about/main";
 
-$route['default_controller'] = "Jobs/landing/main";
+$route['jobs/list'] = "jobs/main/get_jobs_list";
+
+$route['default_controller'] = "jobs/main";
 $route['404_override'] = '';
 
 

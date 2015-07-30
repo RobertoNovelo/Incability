@@ -10,12 +10,6 @@ $("#closedeye").on("click",function()
 
 $(".btn-apply").on("click",function()
 {
+	$("#modal-job-title").html($(this).data("jobtitle"));
 	$("#apply-success").modal();
-});
-
-
-$(function()
-{
-
-
 });

@@ -61,22 +61,15 @@ body
 	text-align: center;
 }
 
+
 .job-posting
 {
-	margin-left: 55px;
-	margin-right: 55px;
+
 	margin-bottom: 2em;
-	margin-bottom: 8em;
-	padding-bottom: 2em;
-	background-color: white;
-	-webkit-box-shadow: 10px 10px 64px 2px rgba(0,0,0,0.6);
-	-moz-box-shadow: 10px 10px 64px 2px rgba(0,0,0,0.6);
-	box-shadow: 10px 10px 64px 2px rgba(0,0,0,0.6);
-	border-radius: 5px;
 }
 
 
-.btn-apply
+.btn-submit-job
 {
 	margin-top: 3em;
 }
@@ -86,4 +79,9 @@ body
 	background-color: white;
 	padding-top: 5em;
 	padding-bottom: 5em;
+}
+
+#submit-name
+{
+	margin-top: 1em;
 }
