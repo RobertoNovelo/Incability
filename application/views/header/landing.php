@@ -29,7 +29,7 @@
              </button>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-             <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav">
                 <li class="active"><a href="/index.php/jobs">Jobs</a></li>
                 <li><a href="/index.php/jobs">Employers</a></li>
                 <li><a href="/index.php/About">About</a></li>
@@ -40,7 +40,11 @@
                       <li><a href="http://achecker.ca/checker/index.php">Web Acessibility Checker</a></li>
                    </ul>
                 </li>
-             </ul>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li id="openeye"><a href="#"><img src="/res/img/open_eye.png" alt="non screen reader version" class="control-img"></a></li>
+              <li id="closedeye"><a href="#"><img src="/res/img/closed_eye.png" alt="screen reader version" class="control-img"></a></li>
+            </ul>
           </div>
        </div>
     </nav>
@@ -48,70 +52,56 @@
     <div class="jumbotron">
       <div class="container">
         <h2>Incability is a tool for job seekers who are blind or visually impaired.</h2>
-        <p>Register and apply to jobs that you are interested in and receive a notification on our mobile application anytime an employeer is interested in your profile.</p>
+        <p>Get notified on our mobile app when employeers want to meet you.</p>
       </div>
     </div>
 
-    <div class="login-container">
-      
-    </div>
+    <div id="content" class="container">
+      <div class="visibility-layer" style="display:none"></div>
 
-    <h2 id="content" class="center-text">Available Jobs</h2>
+      <h2 class="center-text available-jobs-header">Available Jobs</h2>
 
-    <div class="job-posting row">
-      <div class="col-xs-12 col-sm-2 center-text">
-        <button type="button" class="btn btn-success btn-apply">Apply</button>
+      <div class="job-posting row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <div class="row center-text">
+              <button type="button" class="btn btn-success btn-apply">Apply</button>
+              <h3>Job Title: Requirements Engineer</h3>
+              <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
+            </div>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-10">
-        <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
-        <h3>Job Title: Requirements Engineer</h3>
+
+      <div class="job-posting row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <div class="row center-text">
+              <button type="button" class="btn btn-success btn-apply">Apply</button>
+              <h3>Job Title: Software Engineer</h3>
+              <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
+            </div>
+        </div>
       </div>
-    </div>
-    <div class="job-posting row">
-      <div class="col-xs-12 col-sm-2 center-text">
-        <button type="button" class="btn btn-success btn-apply">Apply</button>
+
+      <div class="job-posting row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <div class="row center-text">
+              <button type="button" class="btn btn-success btn-apply">Apply</button>
+              <h3>Job Title: Testing Engineer</h3>
+              <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
+            </div>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-10">
-        <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
-        <h3>Job Title: Requirements Engineer</h3>
-      </div>
-    </div>
-    <div class="job-posting row">
-      <div class="col-xs-12 col-sm-2 center-text">
-        <button type="button" class="btn btn-success btn-apply">Apply</button>
-      </div>
-      <div class="col-xs-12 col-sm-10">
-        <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
-        <h3>Job Title: Requirements Engineer</h3>
-      </div>
-    </div>
-    <div class="job-posting row">
-      <div class="col-xs-12 col-sm-2 center-text">
-        <button type="button" class="btn btn-success btn-apply">Apply</button>
-      </div>
-      <div class="col-xs-12 col-sm-10">
-        <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
-        <h3>Job Title: Requirements Engineer</h3>
-      </div>
-    </div>
-    <div class="job-posting row">
-      <div class="col-xs-12 col-sm-2 center-text">
-        <button type="button" class="btn btn-success btn-apply">Apply</button>
-      </div>
-      <div class="col-xs-12 col-sm-10">
-        <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
-        <h3>Job Title: Requirements Engineer</h3>
+
+      <div class="job-posting row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <div class="row center-text">
+              <button type="button" class="btn btn-success btn-apply">Apply</button>
+              <h3>Job Title: UX Designer</h3>
+              <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
+            </div>
+        </div>
       </div>
     </div>
-    <div class="job-posting row">
-      <div class="col-xs-12 col-sm-2 center-text">
-        <button type="button" class="btn btn-success btn-apply">Apply</button>
-      </div>
-      <div class="col-xs-12 col-sm-10">
-        <h4>Description: Defining, documenting and maintaining requirements and to the subfields of systems engineering and software engineering concerned with this process.</h4>
-        <h3>Job Title: Requirements Engineer</h3>
-      </div>
-    </div>
+    
 
 
 

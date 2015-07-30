@@ -7,6 +7,35 @@ body
 {
 	position: fixed;
 	width: 100%;
+	z-index: 1000;
+}
+
+#content
+{
+	position: relative;
+	margin:0;
+	width: 100%;
+	padding: 0;
+}
+
+.visibility-layer
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	z-index: 999
+}
+
+.available-jobs-header
+{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.control-img
+{
+    max-height: 1.8em;
 }
 
 .jumbotron 
@@ -16,10 +45,9 @@ body
 	color:white;
 	text-align: center;
 	padding-top: 12em;
-	padding-bottom: 12em;
-	margin-bottom: 12em;
+	padding-bottom: 10em;
+	margin-bottom: 0;
 }
-
 
 .login-container
 {
@@ -38,9 +66,13 @@ body
 	margin-left: 55px;
 	margin-right: 55px;
 	margin-bottom: 2em;
-	margin-top: 2em;
+	margin-bottom: 8em;
 	padding-bottom: 2em;
-	border-bottom: solid 1px black;
+	background-color: white;
+	-webkit-box-shadow: 10px 10px 64px 2px rgba(0,0,0,0.6);
+	-moz-box-shadow: 10px 10px 64px 2px rgba(0,0,0,0.6);
+	box-shadow: 10px 10px 64px 2px rgba(0,0,0,0.6);
+	border-radius: 5px;
 }
 
 
@@ -54,5 +86,4 @@ body
 	background-color: white;
 	padding-top: 5em;
 	padding-bottom: 5em;
-	margin-top: 5em;
 }
