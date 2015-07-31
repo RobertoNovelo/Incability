@@ -15,6 +15,8 @@
 
   </head>
   <body>
+  
+    <div class="visibility-layer" style="display:none"></div>
 
     <nav class="navbar navbar-default" role="navigation">
        <a class="sr-only" href="#content">Skip to content</a> 
@@ -49,7 +51,6 @@
        </div>
     </nav>
 
-    <div class="visibility-layer" style="display:none"></div>
 
     <div class="jumbotron">
       <div class="container">

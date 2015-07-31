@@ -30,8 +30,8 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/index.php/">Jobs</a></li>
-                <li><a href="/index.php/employer">Employers</a></li>
+                <li><a href="/index.php/">Jobs</a></li>
+                <li class="active"><a href="/index.php/employer">Employers</a></li>
                 <li><a href="/index.php/about">About</a></li>
                 <li class="dropdown">
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
