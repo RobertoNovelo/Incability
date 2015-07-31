@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Inc. Ability, Accessible Jobs For The Visibility Impaired</title>
+    <title>Inc. Ability, Accessible Jobs For The Visually Impaired</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,11 +59,11 @@
     <div id="content" class="container">
       <div class="visibility-layer"></div>
 
-      <h3 class="center-text available-jobs-header">Over a billion people, about 15% of the world's population, have some form of disability</h3>
-      <h3 class="center-text available-jobs-header">285 million people are estimated to be visually impaired worldwide: 39 million are blindand 246 have low vision</h3>
-      <h3 class="center-text available-jobs-header">About 90% of the world's visually impaired live in low-income/developing countries3.</h3>
-      <h3 class="center-text available-jobs-header">82% of people living with blindness are aged 50 and above – this age group represents20% of the world’s population4</h3>
-      <h3 class="center-text available-jobs-header">An estimated 19 million children below 15 are visually impaired. 1.4 million areirreversibly blind for the rest of their lives and need visual rehabilitation interventions for a full psychological and personal development.5</h3>
+      <h3 class="center-text available-jobs-header">Over a billion people, about 15% of the world's population, have some form of disability.</h3>
+      <h3 class="center-text available-jobs-header">285 million people are estimated to be visually impaired worldwide: 39 million are blindand 246 have low vision.</h3>
+      <h3 class="center-text available-jobs-header">About 90% of the world's visually impaired live in low-income/developing countries.</h3>
+      <h3 class="center-text available-jobs-header">82% of people living with blindness are aged 50 and above – this age group represents20% of the world’s population.</h3>
+      <h3 class="center-text available-jobs-header">An estimated 19 million children below 15 are visually impaired. 1.4 million areirreversibly blind for the rest of their lives and need visual rehabilitation interventions for a full psychological and personal development.</h3>
       <h3 class="center-text available-jobs-header"></h3>
       
     <div class="landing-footer center-text">

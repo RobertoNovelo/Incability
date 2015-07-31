@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
-$db['default']['database'] = 'inkability';
-$db['default']['dbdriver'] = 'MySQLi';
+$db['default']['hostname'] = 'aa11p6phyanaaoz.c2mbbhc7tegx.us-west-2.rds.amazonaws.com';
+$db['default']['username'] = 'incability';
+$db['default']['password'] = 'incability';
+$db['default']['database'] = 'incability';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

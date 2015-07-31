@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Inc. Ability, Accessible Jobs For The Visibility Impaired</title>
+    <title>Inc. Ability, Accessible Jobs For The Visually Impaired</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,33 +49,34 @@
        </div>
     </nav>
 
+    <div class="visibility-layer"></div>
+
     <div class="jumbotron">
       <div class="container">
         <h2>Incability is a tool for job seekers who are blind or visually impaired.</h2>
-        <p>Get notified on our mobile app when employeers want to meet you.</p>
+        <p>Navigate the web just like they do.</p>
       </div>
     </div>
 
     <div id="content" class="container">
-      <div class="visibility-layer"></div>
 
       <h3 class="center-text available-jobs-header">Please Enter Your Job Posting Details</h3>
 
       <div class="row job-posting">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-          <input id="job-title" class="form-control" placeholder="Job Title"/>
+          <input id="job-title" class="form-control" name="Job Title" title="Job Title" placeholder="Job Title"/>
         </div>
       </div>
 
       <div class="row job-posting">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-          <input id="job-desc" class="form-control" placeholder="Job Description"/>
+          <input id="job-desc" class="form-control" name="Job Description" title="Job Description" placeholder="Job Description"/>
         </div>
       </div>
 
       <div class="row job-posting">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3 center-text">
-          <button type="button" class="btn btn-success btn-post-job">Post Job</button>
+          <button type="button" class="btn btn-success btn-post-job" data-toggle="modal" data-target="#gridSystemModal">Post Job</button>
         </div>
       </div>
     </div>
@@ -83,73 +84,78 @@
     <div class="landing-footer center-text">
       <h4>#Mecate2015</h4>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="post-success" tabindex="-1" role="dialog" aria-labelledby="Success" aria-hidden="true">
-      <div class="modal-dialog">
+
+
+    <div id="myname-success" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel4">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-            <h4 class="modal-title" id="Success">Thank you!</h4>
-          </div>
-          <div class="modal-body center-text">
-            <h4>Your job title:</h4>
-            <h4 id="modal-post-title"></h4>
-            <h4>Your job description:</h4>
-            <h4 id="modal-post-desc"></h4>
-            <h4>Please add your name to the list of people who have completed this challenge:</h4>
-              <input id="name" class="form-control" placeholder="Name"/>
-              <button type="button" id="submitmyname" class="btn btn-success">Add My Name</button>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+            <h4 class="modal-title" id="gridModalLabel4">List of people who have completed this challenge:</h4>
+            <div id="nameslist" class="modal-body center-text">
+            </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">No Thanks!</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Ok!</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    
+    <div id="myname-fail" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel3">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+            <h4 class="modal-title" id="gridModalLabel3">Please enter your name!</h4>
+          </div>
+          <div class="modal-footer">
+            <button id="enteryournameok" type="button" class="btn btn-default" data-dismiss="modal">Ok!</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="post-fail" tabindex="-1" role="dialog" aria-labelledby="Failed" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-            <h4 class="modal-title" id="Failed">You are either missing the title or the description of your job!</h4>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Alright!</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header center-text">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+          <h4 class="modal-title" id="gridModalLabel">Thank you!</h4>
+          <input id="name" class="form-control" title="Please add your name to the list of people who have completed this challenge:" placeholder="Please add your name to the list of people who have completed this challenge:"/>
+          <h4>Your job title:</h4>
+          <h4 id="modal-post-title"></h4>
+          <h4>Your job description:</h4>
+          <h4 id="modal-post-desc"></h4><button type="button" id="submitmyname" class="btn btn-success">Add My Name</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">No Thanks!</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="myname-success" tabindex="-1" role="dialog" aria-labelledby="myName" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-            <h4 class="modal-title" id="myName">List of people who have completed this challenge (navigate with p, shift + p in JAWS)</h4>
-
-          </div>
-
-          <div id="nameslist" class="modal-body center-text">
-            
-          </div>
-
-          <div class="modal-footer">
-            <button id="submitmyname" type="button" class="btn btn-default" data-dismiss="modal">Cool!</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+  <div id="post-fail" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+          <h4 class="modal-title" id="gridModalLabel2">You are either missing the title or the description of your job!</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Ok!</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
   </body>
   
   <script type="text/javascript" src="/res/js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="/res/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/res/js/bootstrap-accessibility.js"></script>
   <script type="text/javascript" src="/res/js/employer.js"></script>
 </html>
     
